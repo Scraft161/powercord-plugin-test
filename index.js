@@ -8,12 +8,12 @@ module.exports = class UserEmbeds extends Plugin {
 			aliases: [ 'emb' ],
 			description: 'Send a message as embed.',
 			usage: '{c} [ title content ]',
-			executor ([ title, content ]) {
+			executor ([ /*title, */content ]) {
 				let reply;
 
 				reply = {
 					type: 'rich',
-					title: `${title}`,
+					//title: `${title}`,
 					description: `${content}`
 				}
 
