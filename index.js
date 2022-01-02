@@ -5,8 +5,9 @@ module.exports = class UserEmbeds extends Plugin {
 		// Initializing Here
 		powercord.api.commands.registerCommand({
 			command: 'embed',
+			aliases: [ 'emb' ],
 			description: 'Send a message as embed.',
-			usage: '{c} [ title content arguments ]',
+			usage: '{c} [ title content ]',
 			executor ([ title, content ]) {
 				let reply;
 
@@ -16,7 +17,10 @@ module.exports = class UserEmbeds extends Plugin {
 					description: `${content}`
 				}
 
-				return reply;
+				return {
+					send: false
+					reply
+				};
 			}
 		});
 	}
