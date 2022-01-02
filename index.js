@@ -18,7 +18,7 @@ module.exports = class UserEmbeds extends Plugin {
 				}
 
 				return {
-					send: false
+					send: false,
 					reply
 				};
 			}
