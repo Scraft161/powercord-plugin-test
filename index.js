@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const { Plugin } = require("powercord/entities");
 
 module.exports = class UserEmbeds extends Plugin {
@@ -16,6 +15,8 @@ module.exports = class UserEmbeds extends Plugin {
 					title: `${title}`,
 					description: `${content}`
 				}
+
+				return reply;
 			}
 		});
 	}
