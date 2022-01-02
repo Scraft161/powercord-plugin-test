@@ -7,7 +7,7 @@ module.exports = class UserEmbeds extends Plugin {
 			command: 'embed',
 			description: 'Send a message as embed.',
 			usage: '{c} [ title content arguments ]',
-			executor ([ title, content, arguments ]) {
+			executor ([ title, content ]) {
 				let reply;
 
 				reply = {
