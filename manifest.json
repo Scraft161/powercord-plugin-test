@@ -1,0 +1,7 @@
+{
+	"name": "user embeds",
+	"version": "0.0.1",
+	"description": "Allow sending embeds from the discord client, this is detectable and might result in bans.\nUse at your own risk",
+	"license": "proprietary-development",
+	"nsfw": false
+}
